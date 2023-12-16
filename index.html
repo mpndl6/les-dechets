@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votre Page Principale</title>
+    <link rel="stylesheet" href="styleVideo.css">
+</head>
+<body>
+    <div id="video-container">
+        <!-- Intégration de la vidéo (remplacez URL_DE_VOTRE_VIDEO par le lien de votre vidéo) -->
+        <iframe id="video" src="video/jjk.mp4" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div id="question-container">
+        <header>
+            <h1 class="video-title">"Comment bien trier mes déchets d'activité de soin?"</h1>
+            <p class="video-description">Dans le cadre de l'amélioration du tri des différents types de déchets dans le Centre Hospitalier de Boulogne-sur-Mer,
+                cette vidéo a pour but d'expliquer les différentes questions à se poser pour choisir la bonne poubelle pour son déchet.
+                Merci de visionner la vidéo puis de répondre au questionnaire qui suit.
+            </p>
+        </header>        
+        <!-- Formulaire de Questionnaire -->
+        <form id="quiz-form">
+            <label for="q1">1. Comment triez-vous les déchets recyclables ?</label>
+            <select id="q1" name="q1">
+                <option value="option1">Dans la poubelle jaune</option>
+                <option value="option2">Dans la poubelle verte</option>
+                <option value="option3">Dans la poubelle noire</option>
+            </select>
+
+            <label for="q2">2. Que faites-vous des déchets électroniques ?</label>
+            <select id="q2" name="q2">
+                <option value="option1">Je les jette dans la poubelle normale</option>
+                <option value="option2">Je les recycle dans un centre spécialisé</option>
+                <option value="option3">Je les brûle</option>
+            </select>
+
+            <input type="button" value="Envoyer" onclick="checkQuiz()">
+        </form>
+    </div>
+    <script src="scriptVideo.js"></script>
+</body>
+</html>
